@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main() {
-	int lines;//¦æ¼Æ
+	int lines;//è¡Œæ•¸
 	int num = 0;
-	while (1)//°j°é
+	while (1)//è¿´åœˆ
 	{
-		printf("½Ğ¿é¤J¤@­Ó¦C¼Æ(¤p©óµ¥©ó10ªº¼Æ)©Î¬O¿é¤J-1µ²§ôµ{¦¡¡C");
-		scanf("%d", &lines);//´X¦æ
+		printf("è«‹è¼¸å…¥ä¸€å€‹åˆ—æ•¸(å°æ–¼ç­‰æ–¼10çš„æ•¸)æˆ–æ˜¯è¼¸å…¥-1çµæŸç¨‹å¼ã€‚");
+		scanf("%d", &lines);//å¹¾è¡Œ
 		if (lines < 0) {
-			printf("¿é¤J¿ù»~¡A½Ğ¿é¤J¤j©ó0ªº¼Æ¡C");
+			printf("è¼¸å…¥éŒ¯èª¤ï¼Œè«‹è¼¸å…¥å¤§æ–¼0çš„æ•¸ã€‚");
 			return 0;
 		}
 		if (lines > 10)
-			printf("¿é¤J¿ù»~¡A½Ğ¿é¤J¤p©óµ¥©ó10ªº¼Æ¡C");
+			printf("è¼¸å…¥éŒ¯èª¤ï¼Œè«‹è¼¸å…¥å°æ–¼ç­‰æ–¼10çš„æ•¸ã€‚");
 		num = ((lines + 1) * lines) / 2;
 		for (int i = 1;i <= num; i++) {
 			printf("%d\t", i);
